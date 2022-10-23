@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body{
+    background-color: whitesmoke;
+    height: 70vh;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+
+input{
+    border: none;
+    height: 40px;
+    padding: 0;
+}
+
+button{
+    background-color: white;
+    border: 1px solid grey;
+    padding: .8em .8em;
+
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgba(232, 232, 232, 0.927);
+}
+
+
+
+
+#modes{
+    width: 40%;
+}
+
+
+
+.color-hex{
+    color: Black;
+    width: 100%;
+    text-align: c;
+    background-color:  rgba(255, 255, 255, 1);
+    text-align: center;
+    border: 1px solid grey;
+    font-size: 0.61em;
+    font-weight: bold;
+    line-height: 1em;
+}
+
+
+form{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    padding: .8em;
+  
+    
+
+
+
+
+}
+
+.newColor{
+    min-width: 16.66%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.container{
+    max-width: 75%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 10px
+    
+   
+}
+
+.color-container{
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    align-items: flex-end;
+    border: 10px solid red;
+
+
+}
+
+.flex{
+    display: flex;
+    height: 100vh;
+}
+
