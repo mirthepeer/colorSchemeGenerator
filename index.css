@@ -21,7 +21,8 @@ body{
 }
 
 .sub{
-    margin: 0;
+    margin-bottom: 1.5em;
+    margin-top: 0;
     letter-spacing: 2px;
 }
 
@@ -112,6 +113,7 @@ form{
     background-color: rgba(255, 255, 255, 1);
     border-radius: 10px;
     border: 8px solid black;
+    box-shadow: 0 0 8px black;
     
     
    
