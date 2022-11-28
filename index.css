@@ -5,7 +5,6 @@
 
 body{
     background-color: whitesmoke;
-    height: 70vh;
     font-family: 'Ubuntu', sans-serif;
 
 }
@@ -13,27 +12,42 @@ body{
 
 input{
     border: none;
-    height: 40px;
     padding: 0;
+    min-width: 25px;
 }
 
+label{
+    font-weight: 500;
+}
+
+
 button{
-    background-color: white;
+    background-color: rgb(251, 251, 251);
     border: 1px solid grey;
-    padding: .8em .8em;
+    padding: .5em .8em;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 1px;
 
 }
 
 button:hover{
     cursor: pointer;
-    background-color: rgba(232, 232, 232, 0.927);
+    background-color: rgba(230, 230, 230, 0.93);
+}
+
+select{
+    border-radius: 8px;
+    padding: .4em .5em;
+    letter-spacing: 2px;
+    font-weight: 600;
 }
 
 
 
 
 #modes{
-    width: 40%;
+    max-width: 40%;
 }
 
 
@@ -52,36 +66,32 @@ button:hover{
 
 
 form{
+
     display: flex;
-    width: 90%;
     margin: 0 auto;
-    justify-content: space-evenly;
-    padding: .8em;
-  
-    
-
-
-
-
+    padding: 1em;
+    justify-content: center;
+    gap: 1em;
+    align-items: center;
 }
 
 .newColor{
-    min-width: 16.66%;
-    height: 100%;
+    width: 20%;
     display: flex;
     justify-content: center;
     align-items: flex-end;
 }
 
 .container{
-    max-width: 75%;
-    height: 70vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
-    
+    /* max-width: 95%; */
     margin: 0 auto;
     background-color: rgba(255, 255, 255, 1);
-    border-radius: 10px
+    border-radius: 10px;
+    border: 8px solid black;
+    
     
    
 }
@@ -100,4 +110,6 @@ form{
     display: flex;
     height: 100vh;
 }
+
+
 

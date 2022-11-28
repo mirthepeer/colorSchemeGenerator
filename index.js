@@ -6,6 +6,17 @@ const modes = document.getElementById('modes')
 const count = 6
 const colorPallet = document.getElementById('pallets')
 
+const container = document.getElementById('container')
+
+
+function changeBorderColor() {
+  var myContainer = container;
+  var color ='rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
+  myContainer.style.borderColor = color;
+}
+setInterval(changeBorderColor, 600);
+
+
 function generateColors(){
     fetch(`https://www.thecolorapi.com/scheme?hex=${seedColor.value.slice(1)}&mode=${modes.value}&count=${count}`)
 .then(res=> res.json())
