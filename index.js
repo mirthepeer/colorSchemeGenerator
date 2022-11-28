@@ -25,9 +25,11 @@ function generateColors(){
        let color = (data.colors[i].hex.value)
        let html = ''
 
-       html = `<div class='newColor' style="background-color:${color} ;">
+       html = `
+       <div class='newColor' style="background-color:${color} ;">
+            <h1>${color? '' : 'Loading..'}</h1>
        <div class='color-hex'>
-       <p id='hex'>${color}</p>
+        <p id='hex'>${color}</p>
        </div>
                         
        
