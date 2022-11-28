@@ -11,7 +11,7 @@ const container = document.getElementById('container')
 
 function changeBorderColor() {
   var myContainer = container;
-  var color ='rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
+  var color ='rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) +  ',0.1)';
   myContainer.style.borderColor = color;
 }
 setInterval(changeBorderColor, 600);
