@@ -23,11 +23,12 @@ label{
 
 button{
     background-color: rgb(251, 251, 251);
-    border: 1px solid grey;
+    border: 1px solid rgb(18, 16, 16);
     padding: .5em .8em;
     border-radius: 8px;
     font-weight: 600;
     letter-spacing: 1px;
+    color: black;
 
 }
 
