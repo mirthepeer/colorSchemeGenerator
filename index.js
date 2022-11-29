@@ -7,7 +7,7 @@ const count = 6
 const colorPallet = document.getElementById('pallets')
 
 const container = document.getElementById('container')
-
+const loader = document.getElementById('loading')
 
 function changeBorderColor() {
   var myContainer = container;
@@ -16,28 +16,36 @@ function changeBorderColor() {
 }
 setInterval(changeBorderColor, 600);
 
+function showLoader(){
+    loader.style.display = 'block'
+
+}
+
+function hidLoader(){
+    loader.style.display = 'none'
+}
 
 function generateColors(){
+    showLoader()
     fetch(`https://www.thecolorapi.com/scheme?hex=${seedColor.value.slice(1)}&mode=${modes.value}&count=${count}`)
-.then(res=> res.json())
-.then(data=> {
-    for(let i = 0;i<data.colors.length;i++){
-       let color = (data.colors[i].hex.value)
-       let html = ''
+        .then(res=> res.json())
+        .then(data=> {
+            hidLoader()
+           
+        for(let i = 0;i<data.colors.length;i++){
+            let color = (data.colors[i].hex.value)
+            let html = ''
 
-       html = `
-       <div class='newColor' style="background-color:${color} ;">
-            <h1>${color? '' : 'Loading..'}</h1>
-       <div class='color-hex'>
-        <p id='hex'>${color}</p>
-       </div>
+            html = `
+                <div class='newColor' style="background-color:${color} ;">
+                    <h1>${color? '' : 'Loading..'}</h1>
+                    <div class='color-hex'>
+                        <p id='hex'>${color}</p>
+                    </div>
                         
        
        
-       </div>
-       
-       
-       
+                </div>
        `
 
        colorPallet.innerHTML += html

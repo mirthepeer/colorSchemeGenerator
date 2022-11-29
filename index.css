@@ -112,7 +112,7 @@ form{
     margin: 0 auto;
     background-color: rgba(255, 255, 255, 1);
     border-radius: 10px;
-    border: 8px solid black;
+    border: 8px solid;
     box-shadow: 0 0 8px black;
     
     
@@ -135,6 +135,13 @@ form{
     height: 100vh;
 }
 
+#loading{
+    display: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 3rem;
+}
 
 
 @media screen and (min-width: 992px) {
