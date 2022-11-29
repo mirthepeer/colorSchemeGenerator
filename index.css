@@ -125,7 +125,7 @@ form{
 }
 
 .container{
-    height: 65vh;
+    height: 75vh;
     display: flex;
     flex-direction: column;
     /* max-width: 95%; */
