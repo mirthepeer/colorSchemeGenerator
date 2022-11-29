@@ -21,7 +21,7 @@ function showLoader(){
 
 }
 
-function hidLoader(){
+function hideLoader(){
     loader.style.display = 'none'
 }
 
@@ -30,7 +30,7 @@ function generateColors(){
     fetch(`https://www.thecolorapi.com/scheme?hex=${seedColor.value.slice(1)}&mode=${modes.value}&count=${count}`)
         .then(res=> res.json())
         .then(data=> {
-            hidLoader()
+            hideLoader()
            
         for(let i = 0;i<data.colors.length;i++){
             let color = (data.colors[i].hex.value)
@@ -38,7 +38,6 @@ function generateColors(){
 
             html = `
                 <div class='newColor' style="background-color:${color} ;">
-                    <h1>${color? '' : 'Loading..'}</h1>
                     <div class='color-hex'>
                         <p id='hex'>${color}</p>
                     </div>
