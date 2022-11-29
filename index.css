@@ -101,7 +101,7 @@ select{
     text-align: center;
     border: 1px solid grey;
     font-size: 0.61em;
-    font-weight: bold;
+    font-weight: 800;
     line-height: 1em;
 }
 
@@ -177,5 +177,9 @@ form{
         }
         .sub{
             font-size: 1em;
+        }
+
+        .color-hex{
+            font-size: 1rem;
         }
     }
