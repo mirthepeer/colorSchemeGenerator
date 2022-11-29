@@ -28,8 +28,9 @@ body{
 
 input{
     border: none;
+    background: none;
+    border: 3px solid rgba(69, 53, 53, 0.885);
     padding: 0;
-    min-width: 25px;
 }
 
 label{
@@ -40,11 +41,12 @@ label{
 button{
     background-color: rgb(251, 251, 251);
     border: 1px solid grey;
-    padding: .5em .8em;
+    padding: .7em .8em;
     border-radius: 8px;
     font-weight: 600;
     letter-spacing: 1px;
     color: black;
+    align-self: flex-end;
 
 }
 
@@ -55,7 +57,7 @@ button:hover{
 
 select{
     border-radius: 8px;
-    padding: .5em 0 .5em .4em;
+    padding: .2em 0 .2em .4em;
     letter-spacing: 2px;
     font-weight: 600;
     font-size: 1rem;
@@ -67,9 +69,20 @@ select{
 
 
 
-
+/* 
 #modes{
     max-width: 40%;
+} */
+
+.input-field{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    letter-spacing: 2px;
+    max-width: 45%;
+    gap:.5em;
+    color: rgba(0, 0, 0, 0.649);
+    font-weight: 100;
 }
 
 
@@ -105,7 +118,7 @@ form{
 }
 
 .container{
-    height: 80vh;
+    height: 65vh;
     display: flex;
     flex-direction: column;
     /* max-width: 95%; */
@@ -148,5 +161,7 @@ form{
     
         .container {
             width: 65%;
+            height: 80vh;
+           
         }
     }

@@ -20,8 +20,12 @@
         <div>
             <header>
                 <form>
-                    <label for="seedColor">Color:</label>
-                    <input type="color" id="seedColor"/>
+                    <div class="input-field">
+                        <label for="seedColor">Color</label>
+                        <input type="color" id="seedColor"/>
+                    </div>
+                  <div class="input-field">
+                    <label for="modes"> Choose a Mode</label>
                     <select id="modes">
                         <option value="monochrome">Monochrome </option>
                         <option value="monochrome-dark">Monochrome Dark</option>
@@ -32,7 +36,9 @@
                         <option value="triad">Triad</option>
                         <option value="quad">Quad</option>
                     </select>
-                    <button id="colorButton">Generate Pallet</button>
+                  </div>
+                    
+                    <button id="colorButton">Generate</button>
                 </form>
      
             </header>
