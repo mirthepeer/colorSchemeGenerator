@@ -28,9 +28,10 @@ body{
 
 input{
     /* border: none; */
+    height: 30px;
     /* background: none; */
     /* border: 3px solid rgba(69, 53, 53, 0.885); */
-    /* padding: 0; */
+    padding: 0;
 }
 
 label{
@@ -39,14 +40,18 @@ label{
 
 
 button{
-    background-color: rgb(251, 251, 251);
+    background: rgb(255, 255, 255);
     border: 1px solid grey;
-    padding: .7em .8em;
+    padding: 2em .8em;
     border-radius: 8px;
+    font-size: 1rem;
+    text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 1px;
-    color: black;
+    color: rgb(0, 0, 0);
     align-self: flex-end;
+    text-shadow: 0 0 2px white;
+    box-shadow: 0 0 3px black;
 
 }
 
