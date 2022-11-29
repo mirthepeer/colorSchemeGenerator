@@ -28,9 +28,9 @@ body{
 
 input{
     /* border: none; */
-    background: none;
+    /* background: none; */
     /* border: 3px solid rgba(69, 53, 53, 0.885); */
-    padding: 0;
+    /* padding: 0; */
 }
 
 label{
