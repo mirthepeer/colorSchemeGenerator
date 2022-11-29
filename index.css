@@ -27,9 +27,9 @@ body{
 }
 
 input{
-    border: none;
+    /* border: none; */
     background: none;
-    border: 3px solid rgba(69, 53, 53, 0.885);
+    /* border: 3px solid rgba(69, 53, 53, 0.885); */
     padding: 0;
 }
 
